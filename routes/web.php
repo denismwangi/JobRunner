@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +24,10 @@ Route::get('/', function () {
 
 Route::get('/test-job', [JobTestController::class, 'testJob'])->name('job.test');
 Route::get('/logs', [DashboardController::class, 'index'])->name('logs.index');
+Route::get('/secondTest', [JobTestController::class, 'secondTest'])->name('logs.functTest');
+Route::get('/', [DashboardController::class, 'showJobs'])->name('jobs.index');
+Route::get('jobs', [DashboardController::class, 'allJobs'])->name('jobs.all');
+
+
+
+

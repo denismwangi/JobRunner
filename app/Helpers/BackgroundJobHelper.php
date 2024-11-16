@@ -14,6 +14,8 @@ if (!function_exists('runBackgroundJob')) {
         } else {
             $process = new Process([$command]);
             $process->setTty(false);
+            Log::info("Executing command: $command");
+
         }
 
         for ($attempt = 0; $attempt < $retryAttempts; $attempt++) {
