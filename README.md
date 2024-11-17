@@ -77,6 +77,9 @@ then run the following command to run the project.
 <img src="images/Screenshot from 2024-11-18 00-36-55.png" alt="Job Runner Diagram" width="900">
 
 ### Dashboard showing jobs analytics
+```bash 
+http://127.0.0.1:8000/
+```
 <img src="images/Screenshot from 2024-11-18 00-21-59.png" alt="Job Runner Diagram" width="900">
 
 ### Logs from the Log file
