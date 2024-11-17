@@ -67,20 +67,33 @@ then run the following command to run the project.
 ```
 **Log information**
 
-<img src="images/Screenshot from 2024-11-18 00-04-02.png" alt="Job Runner Diagram" width="600">
+<img src="images/Screenshot from 2024-11-18 00-04-02.png" alt="Job Runner Diagram" width="900">
 
 **Testing Using web interface**
 - Navigate to 
  ```bash http://localhost:8000/test-job
 ```
-<img src="images/Screenshot from 2024-11-18 00-04-02.png" alt="Job Runner Diagram" width="600">
+<img src="images/Screenshot from 2024-11-18 00-36-55.png" alt="Job Runner Diagram" width="900">
 
 ### Dashboard showing jobs analytics
-<img src="images/Screenshot from 2024-11-18 00-21-59.png" alt="Job Runner Diagram" width="600">
+<img src="images/Screenshot from 2024-11-18 00-21-59.png" alt="Job Runner Diagram" width="900">
 
 ### Logs from the Log file
-<img src="images/Screenshot from 2024-11-18 00-22-11.png" alt="Job Runner Diagram" width="600">
+<img src="images/Screenshot from 2024-11-18 00-22-11.png" alt="Job Runner Diagram" width="900">
 
+### Sample Logs from background_jobs_error.log file
 
+```bash
 
+[2024-11-16 17:00:26] local.ERROR: Unauthorized class or method: AppHttpControllersJobTestController::functTest  
+[2024-11-16 17:00:40] local.ERROR: Unauthorized class or method: AppHttpControllersJobTestController::functTest  
+[2024-11-16 17:01:00] local.ERROR: Unauthorized class or method: App\Http\Controllers\JobTestController::functTesti  
+[2024-11-16 17:01:38] local.ERROR: Job execution failed: Array to string conversion  
+[2024-11-16 17:02:26] local.ERROR: Unauthorized class or method: AppHttpControllersJobTestController::functTest  
+[2024-11-16 17:02:51] local.ERROR: Unauthorized class or method: AppHttpControllersJobTestController::functTest  
+[2024-11-16 17:03:06] local.ERROR: Job execution failed: Array to string conversion  
+[2024-11-16 17:05:10] local.ERROR: Job execution failed: Array to string conversion  
+[2024-11-16 17:05:30] local.ERROR: Job execution failed: Array to string conversion  
+[2024-11-16 17:38:05] local.ERROR: Unauthorized class or method: App\Jobs\TestJob::functTest  
+```
 
