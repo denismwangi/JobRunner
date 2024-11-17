@@ -42,11 +42,12 @@ DB_PASSWORD=
 
 
 ```
-##### Composer Install
-cd into the project directory via terminal and run the following  command to install composer packages.
+##### Install Laravel Dependencies
+cd into the project directory via the terminal and run the following  command to install composer packages.
+###### `composer install`
 
 ##### Generate Key
-then run the following command to generate fresh key.
+then run the following command to generate a fresh key.
 
 ###### `php artisan key:generate`
 
