@@ -19,7 +19,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="{{route('logs.all')}}">
                         <i class="bi bi-bookmarks"></i>All Logs
                     </a>
                 </li>

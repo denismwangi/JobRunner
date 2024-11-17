@@ -43,8 +43,7 @@
                                     </div>
                                     <div class="col-auto">
                                         <div class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
-                                            <i class="bi bi-credit-card"></i>
-                                        </div>
+                                            <i class="bi bi-bookmarks"></i>                                      </div>
                                     </div>
                                 </div>
                             </div>
@@ -60,8 +59,7 @@
                                     </div>
                                     <div class="col-auto">
                                         <div class="icon icon-shape bg-primary text-white text-lg rounded-circle">
-                                            <i class="bi bi-people"></i>
-                                        </div>
+                                            <i class="bi bi-bookmarks"></i>                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -77,8 +75,7 @@
                                     </div>
                                     <div class="col-auto">
                                         <div class="icon icon-shape bg-info text-white text-lg rounded-circle">
-                                            <i class="bi bi-clock-history"></i>
-                                        </div>
+                                            <i class="bi bi-check2-circle"></i>                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -93,9 +90,8 @@
                                         <span class="h3 font-bold mb-0">{{$failedJobsCount}}</span>
                                     </div>
                                     <div class="col-auto">
-                                        <div class="icon icon-shape bg-warning text-white text-lg rounded-circle">
-                                            <i class="bi bi-minecart-loaded"></i>
-                                        </div>
+                                        <div class="icon icon-shape bg-danger text-white text-lg rounded-circle">
+                                            <i class="bi bi-exclamation-circle"></i>                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +110,6 @@
                                     <th scope="col">Method</th>
                                     <th scope="col">Number Retries</th>
                                     <th scope="col">Status</th>
-                                    <th scope="col">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -134,9 +129,7 @@
                                                 <span class="badge badge-lg badge-dot"><i class="bg-warning"></i> Pending</span>
                                             @endif
                                         </td>
-                                        <td class="">
-                                            <a href="#" class="btn btn-sm btn-neutral">Retry</a>
-                                        </td>
+
                                     </tr>
                                 @endforeach
                             </tbody>

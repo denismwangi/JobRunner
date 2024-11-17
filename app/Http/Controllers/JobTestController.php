@@ -17,19 +17,13 @@ class JobTestController extends Controller
 
     public function secondTest(){
         Log::info("Started TestJob is running with parameters");
-
-
-        runBackgroundJob("App\Http\Controllers\JobTestController", 'functTest', ["john", "hello","uhnHow are you jo"]);
-
+        runBackgroundJob("App\Http\Controllers\JobTestController", 'functTest', ["john", "hello","How are you you"]);
         return response()->json(['status' => 'Job dispatched successfully']);
-
-
     }
 
     public function functTest($params){
         Log::info("Started TestJob is running with parameters");
         Log::info($params);
-
         return response()->json(['status' => 'Job dispatched successfully']);
 
 
