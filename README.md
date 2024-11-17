@@ -8,37 +8,57 @@ This repository provides a system to run background jobs asynchronously in a Lar
 - **Error Handling**: Capture and log detailed error messages if there are missing parameters, incorrect method names, or execution failures.
 - **Reflection-based Invocation**: Dynamically call methods on classes with parameters passed at runtime.
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Run a Job](#run-a-job)
-  - [Configuration](#configuration) 
-- [Logging](#logging)
-  - [Log Format](#log-format)
-  - [Custom Log File](#custom-log-file)
-- [Testing](#testing)
-  - [Test Cases](#test-cases)
-  - [Sample Logs](#sample-logs)
-- [Optional Features](#optional-features)
-- [Assumptions and Limitations](#assumptions-and-limitations)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
-### Step 1: Clone the Repository
+### Clone the Repository
 
 Clone the repository
-
 ```bash
 git clone https://github.com/denismwangi/JobRunner.git
 ```
 
-### Step 2: Install Dependencies
+##### .env
+Copy contents of .env.example file to .env file. Create a database and connect your database in .env file.
+**sample env**
+```bash
 
-composer install
+APP_NAME=JobRunner
+APP_ENV=local
+APP_KEY=base64:vTeETn02lFotAla9a5Z/V95dQztiuglcFg4HIlY0GrQ=
+APP_DEBUG=true
+APP_URL=http://localhost
 
-### Step 3: Testing the script
+LOG_CHANNEL=stack
+LOG_DEPRECATIONS_CHANNEL=null
+LOG_LEVEL=debug
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=job_runner
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+```
+##### Composer Install
+cd into the project directory via terminal and run the following  command to install composer packages.
+
+##### Generate Key
+then run the following command to generate fresh key.
+
+###### `php artisan key:generate`
+
+##### Run Migration
+then run the following command to create migrations in the database.
+
+###### `php artisan migrate`
+then run the following command to run the project.
+###### `php artisan serve`
+
+### Testing the script
+
 **Testing Using Terminal for Linux Operating System**
 
 -Testing TestJob class and execute function with parameters 10 and 1
