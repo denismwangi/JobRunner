@@ -65,4 +65,7 @@ then run the following command to run the project.
 ```bash 
 /usr/bin/php8.1 /opt/lampp/htdocs/jobrunner/background_job_runner.php 'App\Jobs\TestJob' execute '[10,1]' 
 ```
+**Log information**
+
+<img src="images/Screenshot from 2024-11-18 00-04-02.png" alt="Job Runner Diagram" width="600">
 
