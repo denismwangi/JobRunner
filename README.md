@@ -28,7 +28,21 @@ This repository provides a system to run background jobs asynchronously in a Lar
 
 ### Step 1: Clone the Repository
 
-Clone the repository to your local machine:
+Clone the repository
 
 ```bash
-git clone https://github.com/your-username/background-job-runner.git
+git clone https://github.com/denismwangi/JobRunner.git
+```
+
+### Step 2: Install Dependencies
+
+composer install
+
+### Step 3: Testing the script
+**Testing Using Terminal for Linux Operating System**
+
+-Testing TestJob class and execute function with parameters 10 and 1
+```bash 
+/usr/bin/php8.1 /opt/lampp/htdocs/jobrunner/background_job_runner.php 'App\Jobs\TestJob' execute '[10,1]' 
+```
+
